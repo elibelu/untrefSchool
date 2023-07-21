@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Belanosima';
+    src: url("./fonts/belanosima/Belanosima-Regular.ttf"), format(truetype);
+    font-style: normal;
+    font-weight: bolder;
+ }
+
+ /*---Aplicando CSS en forma global---*/   
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EFF5F5;
+}
+
+li {
+    font-size: 10px;
+}
+
+
+ /*---Aplicando CSS al header---*/ 
+#opciones {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding-left: 90px;
+    z-index: 1000;
+    background-color: #00425A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.menues {
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    width: 5em;
+}
+ul#opciones  li a:hover {
+    color: #FC7300;
+   }
+
+ /*---Aplicando CSS al body---*/ 
+body {
+    font-size: 19px;
+    background-color: #EFF5F5;
+}
+
+ /*---Aplicando CSS al main---*/ 
+#article1 {
+    padding: 10px;
+    position: relative;
+ }
+ #escuelaVerde {
+    height: 570px;
+ }
+ #logo {
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+ }
+ #tituloUntrefSchool {
+    position: absolute;
+    top: 310px;
+    left: 40%;
+ }
+
+ /*---Aplicando CSS a seccionSoy---*/ 
+ #tituloQuienesSomos {
+    height: 50px;
+    padding: 20px;
+    margin: 50px;
+ }
+ #seccionSoy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+ }
+ #fotoSoy {
+    position: absolute;
+    top: 800px;
+    left: 5%;
+    width:500px;
+    height:300px;
+ }
+#loremSomos {
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+}
+
+ /*---Aplicando CSS a seccionElegirnos---*/
+ #tituloElegirnos{
+    height: 50px;
+    padding: 20px;
+    margin: 50px;
+ }
+ #seccionElegirnos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+ }
+ #fotoElegirnos {
+    position: relative;
+    right: -190px;
+    bottom: 30px;
+    width:500px;
+    height:300px;
+ }
+ #loremElegirnos {
+    position: relative;
+    left: 70px;
+    bottom: 30px;
+ }
+
+ /*---Aplicando CSS a seccionPropuestas---*/ 
+ #tituloPropuestas {
+    height: 50px;
+    padding: 20px;
+    margin: 50px;
+ }
+ #seccionPropuestas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 350px;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+ }
+ .fotoPropuestas {
+    width:250px;
+    height:250px;
+    border-radius: 150px;
+    border: 10px solid #1F8A70
+ }
+
+ /*---Aplicando CSS article noticias---*/
+ #tituloNoticias {
+    height: 50px;
+    padding: 20px;
+    margin: 50px;
+ }
+ #noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    padding: 10px;
+    margin: 25px;
+ }
+ .noticiaDuo {
+    padding: 30px;
+ }
+
+
+ /*---Aplicando CSS al footer general---*/ 
+ ion-icon {
+    font-size: 45px;
+    color: #FC7300;
+  } 
+#piePagina {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #181823;
+    color: #EFF5F5;
+}
+
+
+ /*---Aplicando CSS a nav contacto---*/
+.contactos {
+    color: #FC7300;
+    font-size: 19px;
+}
+
+
+ /*---Aplicando CSS a div subir---*/ 
+
+#subir {
+    position: fixed;
+    top: 86%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+ /*---Aplicando CSS a los títulos---*/ 
+h1 {
+    font-size: 65px;
+    color: #EFF5F5;
+    border-bottom: 1px solid;
+    box-shadow: inset 0 -1 #EFF5F5;
+}
+
+h2 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #1F8A70;
+}
+
+h3 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/*---Aplicando comportamiento responsive---*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    #opciones {
+    
+        width: 100%;
+        height: 75px;
+        padding-left: 90px;
+        z-index: 1000;
+        background-color: #00425A;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+
+
+

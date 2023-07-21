@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Belanosima';
+    src: url("./fonts/belanosima/Belanosima-Regular.ttf"), format(truetype);
+    font-style: normal;
+    font-weight: bolder;
+ }
+
+ /*---Aplicando CSS en forma global---*/  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EFF5F5;
+}
+
+li {
+    font-size: 10px;
+}
+
+
+ /*---Aplicando CSS al header---*/ 
+#opciones {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding-left: 90px;
+    z-index: 1000;
+    background-color: #00425A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.menues {
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    width: 5em;
+}
+ul#opciones  li a:hover {
+    color: #FC7300;
+   }
+
+ /*---Aplicando CSS al body---*/ 
+ body {
+    font-size: 19px;
+    background-color: #EFF5F5;
+}
+
+/*---Aplicando CSS a la section formularioEntrevista---*/
+#tituloEntrevista {
+    height: 50px;
+    padding: 20px;
+    margin: 50px;
+}
+#formularioEntrevista {
+    height: 750px;
+    width: 550px;
+    background-color: #1F8A70;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #00425A;
+}
+.formu {
+    width: 100%;
+    background: #EFF5F5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #00425A
+}
+.boton {
+    height: 40px;
+    width: 100%;
+    background: #00425A;
+    font-size: 20px;
+    color: #EFF5F5;
+    text-decoration: none;
+}
+.boton:hover {
+    color: #FC7300;
+}
+
+ /*---Aplicando CSS al footer general---*/ 
+ ion-icon {
+    font-size: 45px;
+    color: #FC7300;
+  } 
+#piePagina {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #181823;
+    color: #EFF5F5;
+}
+
+
+ /*---Aplicando CSS a nav contacto---*/
+.contactos {
+    color: #FC7300;
+    font-size: 19px;
+}
+
+
+ /*---Aplicando CSS a div subir---*/ 
+
+#subir {
+    position: fixed;
+    top: 86%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+
+ /*---Aplicando CSS a los títulos---*/ 
+h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #EFF5F5;
+}

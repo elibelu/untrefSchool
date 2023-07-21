@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de entrevistas by Eli L.</title>
+    <link rel="stylesheet" href=".//css/formulario.css">
+    <!--Enlaces para font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+    <!--Enlace para favicon-->
+    <link rel="icon" type="image/png" href=".//img/favicon32x32.png">
+</head>
+
+<header>
+    <nav id="menu" class="destacado">
+        <ul id="opciones">
+            <li><a class="menues" href=".//index.html" target="_blank">QUIENES SOMOS</a></li>
+            <li><a class="menues" href=".//index.html" target="_blank">POR QUÉ ELEGIRNOS</a></li>
+            <li><a class="menues" href=".//index.html" target="_blank">PROPUESTA EDUCATIVA</a></li>
+            <li><a class="menues" href=".//formulario.html" target="_self">FORMULARIO</a></li>
+            <li><a class="menues" href=".//index.html" target="_blank">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <h1 id="tituloEntrevista">Solicitá tu entrevista de admisión:</h1>
+    <section id="formularioEntrevista">
+        <!--Link para hacer funcional form-->
+        <form class="cajaForm" action="https://formsubmit.co/f99a143f830c68329393a52aae6f282e" method="POST">
+         <div>
+             <label for="nombre">Nombre</label>
+             <br>
+             <input class="formu" type="text" name="nombre" value="" id="nombre" required placeholder="Indique su nombre" minlength="3" maxlength="100">
+         </div>
+
+         <div>
+             <label for="apellido">Apellido</label>
+             <br>
+             <input class="formu" type="text" name="apellido" value="" id="apellido" required placeholder="Indique su apellido" minlength="3" maxlength="30">
+         </div>
+
+         <div>
+            <label for="apellido">Email</label>
+             <br>
+             <input class="formu" type="text" name="email" value="" id="email" required placeholder="Brinde su email por favor">
+         </div>
+
+         <div>
+             <label for="apellido">Nivel</label>
+             <br>
+             <input class="formu" type="text" name="nivel" value="" id="nivel" required placeholder="Díganos el nivel que consulta">
+         </div>
+
+         <div>
+             <label for="mensaje">Mensaje</label>
+             <br>
+             <textarea class="formu" name="mensaje" id="mensaje" cols="30" rows="10" required
+             placeholder="Déjenos su mensaje"></textarea>
+         </div>
+
+         <div>
+             <button class="boton" type="submit">Enviar datos</button>
+         </div>    
+        </form>
+     </section>
+
+
+     <footer id="piePagina">
+        <nav id="redesSociales">
+            <h3 class="titulosFooter"">REDES SOCIALES</h3>
+            <ul id="redes">
+                <li><a href="https://www.facebook.com/untref" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/untref" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/untref/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </nav>
+        <div id="mapa">
+            <h3 class="titulosFooter">UNTREF School</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.965341660302!2d-58.568842811145075!3d-34.60503789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689695053972!5m2!1ses!2sar"  width="350" height="145" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <nav id="contacto">
+            <h3 class="titulosFooter">CONTACTO</h3>
+            <ul id="ilContacto">
+                <h4>Mail</h4>
+                <li><a class="contactos" href="mailto:secretariaacademica@untref.edu.ar">secretariaacademica@untref.edu.ar</a></li>
+                <h4>Teléfono</h4>
+                <li><a class="contactos" href="tel:+5491145755012">4575-5012</a></li>
+                <h4>Nuestro whatsapp</h4>
+                <li><a class="contactos" href="https://wa.me/1155223399"">1155223399</a></li>
+            </ul>
+        </nav>
+        <div id="subir">
+            <a href="#opciones"><ion-icon id="flecha" name="chevron-up-circle-outline"></ion-icon></a>
+        </div>
+    </footer>
+
+    <!--Enlaces para utilizar íconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
