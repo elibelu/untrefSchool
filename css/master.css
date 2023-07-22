@@ -27,10 +27,184 @@ a {
 }
 
 li {
-    font-size: 10px;
+    font-size: 15px;
+}
+ 
+h1 {
+    font-size: 25px;
+    color: #EFF5F5;
+    border-bottom: 1px solid;
+    box-shadow: inset 0 -1 #EFF5F5;
 }
 
+h2 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #1F8A70;
+}
 
+h3 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/*---Aplicando CSS al body---*/ 
+body {
+    background-color: #EFF5F5;
+    }
+
+
+
+/*------*/
+/*---APLICANDO COMPORTAMIENTO RESPONSIVE---*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    /*---Aplicando CSS al header---*/
+    #opciones {
+        width: 100%;
+        height: 135px;
+        padding-left: 30px;
+        z-index: 1000;
+        background-color: #00425A;
+        font-weight: bolder;
+    }
+    li {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    ul#opciones  li a:hover {
+        color: #FC7300;
+    }
+     /*---Aplicando CSS al main---*/ 
+    #article1 {
+    padding: 10px;
+    position: relative;
+    }
+    #logo {
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    }
+    #tituloUntrefSchool {
+    position: absolute;
+    top: 290px;
+    left: 40%;
+    }
+    /*---Aplicando CSS a seccionSoy---*/ 
+    #tituloQuienesSomos {
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    }
+    #seccionSoy {
+    height: 700px;
+    }
+    #fotoSoy {
+    position: absolute;
+    padding: 10px;
+    width:600px;
+    height:400px;
+    }
+    #loremSomos {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    bottom: -250px;
+    }
+    /*---Aplicando CSS a seccionElegirnos---*/
+    #tituloElegirnos{
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    }
+    #seccionElegirnos {
+    height: 700px;
+    }
+    #fotoElegirnos {
+    position: absolute;
+    padding: 10px;
+    width:600px;
+    height:400px;
+    }
+    #loremElegirnos {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    bottom: -1000px;
+    }
+    /*---Aplicando CSS a seccionPropuestas---*/ 
+    #tituloPropuestas {
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    }
+    #seccionPropuestas {
+    height: 1800px;
+    }
+    .niveles {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 10px;
+    }
+    /*---Aplicando CSS article noticias---*/
+    #tituloNoticias {
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    }
+    #noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    padding: 10px;
+    margin: 5px;
+    }
+    .noticiaDuo {
+    padding: 30px;
+    }
+    /*---Aplicando CSS al footer general---*/ 
+    ion-icon {
+    font-size: 25px;
+    color: #FC7300;
+    } 
+    #piePagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    height: 250px;
+    background-color: #181823;
+    color: #EFF5F5;
+    }
+     /*---Aplicando CSS a nav contacto---*/
+    .contactos {
+    color: #FC7300;
+    font-size: 10px;
+    }
+    /*---Aplicando CSS a div subir---*/ 
+    #subir {
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    }
+    
+
+/*------*/
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
  /*---Aplicando CSS al header---*/ 
 #opciones {
     display: grid;
@@ -53,13 +227,11 @@ li {
 ul#opciones  li a:hover {
     color: #FC7300;
    }
-
  /*---Aplicando CSS al body---*/ 
 body {
     font-size: 19px;
     background-color: #EFF5F5;
 }
-
  /*---Aplicando CSS al main---*/ 
 #article1 {
     padding: 10px;
@@ -79,10 +251,10 @@ body {
  }
  #tituloUntrefSchool {
     position: absolute;
-    top: 310px;
+    top: 350px;
     left: 40%;
+    font-size: 30px;
  }
-
  /*---Aplicando CSS a seccionSoy---*/ 
  #tituloQuienesSomos {
     height: 50px;
@@ -106,7 +278,6 @@ body {
     right: 50px;
     bottom: 30px;
 }
-
  /*---Aplicando CSS a seccionElegirnos---*/
  #tituloElegirnos{
     height: 50px;
@@ -130,7 +301,6 @@ body {
     left: 70px;
     bottom: 30px;
  }
-
  /*---Aplicando CSS a seccionPropuestas---*/ 
  #tituloPropuestas {
     height: 50px;
@@ -140,7 +310,7 @@ body {
  #seccionPropuestas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 350px;
+    height: 750px;
     padding: 10px;
     margin: 25px;
     text-align: center;
@@ -168,8 +338,6 @@ body {
  .noticiaDuo {
     padding: 30px;
  }
-
-
  /*---Aplicando CSS al footer general---*/ 
  ion-icon {
     font-size: 45px;
@@ -183,15 +351,11 @@ body {
     background-color: #181823;
     color: #EFF5F5;
 }
-
-
  /*---Aplicando CSS a nav contacto---*/
 .contactos {
     color: #FC7300;
     font-size: 19px;
 }
-
-
  /*---Aplicando CSS a div subir---*/ 
 
 #subir {
@@ -200,52 +364,8 @@ body {
     left: 95%;
     transform: translate(-50%, -50%);
 }
-
- /*---Aplicando CSS a los títulos---*/ 
-h1 {
-    font-size: 65px;
-    color: #EFF5F5;
-    border-bottom: 1px solid;
-    box-shadow: inset 0 -1 #EFF5F5;
 }
 
-h2 {
-    font-family: 'Belanosima', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-    color: #1F8A70;
-}
-
-h3 {
-    font-family: 'Belanosima', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-h4 {
-    font-family: 'Belanosima', sans-serif;
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-/*---Aplicando comportamiento responsive---*/
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    #opciones {
-    
-        width: 100%;
-        height: 75px;
-        padding-left: 90px;
-        z-index: 1000;
-        background-color: #00425A;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bolder;
-    }
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-}
 
 
 
